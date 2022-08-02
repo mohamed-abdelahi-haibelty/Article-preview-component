@@ -13,4 +13,78 @@
 body{
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
+    background-color: var(---Grayish-Blue);
+}
+.container{
+    margin-top: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    width:90%;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(---Light-Grayish-Blue);
+    border-radius: 10px;
+    gap: 2rem;
+}
+image{
+   width:100%;
+}
+.image img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:100%;
+}
+.info{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.bold{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 900;
+}
+.light{
+    line-height: 1.6;
+    color: var(--Desaturated-Dark-Blue);
+    margin-bottom: 1rem;
+}
+.profil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.user-img{
+    border-radius: 50%;
+    overflow: hidden;
+    width:50px;
+    aspect-ratio: 1/1;
+}
+.user-img img{
+    width: 100%;
+}
+.name{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+.date{
+    color: var(--Desaturated-Dark-Blue);
+}
+.share{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 10px;
+    background-color: hsl(212deg 33% 89%);
+}
+.share img{
+    width:100%;
 }
