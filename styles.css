@@ -90,7 +90,7 @@ image{
 }
 @media(min-width:600px){
     .container{
-        width:800px;
+        width:750px;
         grid-template-columns: 300px auto;
         align-content: center;
         gap:1rem;
@@ -99,5 +99,11 @@ image{
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
         height: 100%;
+    }
+    .info{
+        padding-top: 1.5rem;
+    }
+    .bold{
+        font-size: 20px;
     }
 }
