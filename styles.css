@@ -45,7 +45,7 @@ image{
     font-weight: 900;
 }
 .light{
-    line-height: 1.6;
+    line-height: 1.4;
     color: var(--Desaturated-Dark-Blue);
     margin-bottom: 1rem;
 }
@@ -84,6 +84,7 @@ image{
     border: none;
     padding: 10px;
     background-color: var(---Light-Grayish-Blue);
+    position: relative;
 }
 .share img{
     width:100%;
@@ -105,5 +106,40 @@ image{
     }
     .bold{
         font-size: 20px;
+    }
+    .active{
+        background-color: var(--Very-Dark-Grayish-Blue);
+        border-radius: 10px;
+        position: absolute;
+        width: 237px;
+        padding: 16px 21px;
+        display: flex;
+        align-items: center;
+        top: -74px;
+        right: -85px;
+        justify-content: space-around;
+        box-shadow: 2px 2px 8px var(---Grayish-Blue);
+    }
+    .active::after{
+        content: " ";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: solid;
+        border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+        border-width: solid;
+        border-width: 11px;
+        left: 123px;
+        bottom: -22px;
+    }
+    .active img{
+        width:15px;
+        aspect-ratio: 1/1;
+    }
+    .active h4{
+        color: var(--Desaturated-Dark-Blue);
+        font-weight: 400;
+        font-size: 9px;
+        letter-spacing: 3px;
     }
 }
