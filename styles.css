@@ -86,8 +86,50 @@ image{
     background-color: var(---Light-Grayish-Blue);
     position: relative;
 }
+.share:hover{
+    cursor: pointer;
+}
 .share img{
     width:100%;
+}
+
+@media(max-width:599px){
+    .profil-active-sm{
+        margin-bottom: 0;
+        margin-right: -2rem;
+        margin-left: -2rem;
+        padding: 1rem;
+        border-bottom-left-radius: 10px;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        border-bottom-right-radius: 10px;
+        transition: 0.4s ease;
+    }
+    .d-sm{
+        display: none;
+    }
+}
+.active{
+    display:none;
+}
+.active-sm{
+    display: flex;
+    gap: 20px;
+}
+.active-sm h4{
+    color: var(---Grayish-Blue);
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.active img{
+    width:15px;
+    aspect-ratio: 1/1;
+}
+.active h4{
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: 3px;
 }
 @media(min-width:600px){
     .container{
@@ -113,12 +155,17 @@ image{
         position: absolute;
         width: 237px;
         padding: 16px 21px;
-        display: flex;
         align-items: center;
         top: -74px;
         right: -85px;
         justify-content: space-around;
         box-shadow: 2px 2px 8px var(---Grayish-Blue);
+    }
+    .active.d-large{
+        display:flex;
+    }
+    .active-sm{
+        display: none;
     }
     .active::after{
         content: " ";
